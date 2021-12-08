@@ -1,0 +1,37 @@
+
+use bowlingleagueexample;
+
+select distinct bowlingleagueexample.bowlers.BowlerCity from bowlers;
+select distinct BowlerCity from bowlers;
+select distinct bowlerstate from bowlingleagueexample.bowlers;
+select DISTINCT bowlerstate, bowlerfirstname, bowlerlastname,  bowlercity  from bowlers order by bowlercity;
+select distinct  teamid,bowlerzip, bowlercity,  bowlerfirstname, bowlerlastname from bowlers where bowlercity != 'auburn' ORDER BY teamid,bowlerzip;
+use schoolschedulingexample;
+select categorydescription from categories order by categorydescription;
+SELECT departmentid ,deptname from departments order by departmentid, deptname asc;
+use salesordersexample;
+select vendname ,vendzipcode, VendCity,VendState from vendors order BY  vendstate asc ;
+use schoolschedulingexample;
+select schoolschedulingexample.subjects.CategoryID, subjectname,subjectestclasssize from subjects ORDER BY subjectestclasssize ;
+select  stflastname ,stffirstname , stfphonenumber,staffid from staff order by stffirstname asc, stflastname desc;
+use bowlingleagueexample;
+use bowlingleagueexample;
+select distinct BowlerCity from bowlingleagueexample.bowlers;
+select  bowlerstate, BowlerCity from bowlers;
+select * from bowlers;
+show DATABASES;
+show TABLES;
+show DATABASES;
+show SCHEMAS;
+use schoolschedulingexample;
+show tables;
+select CategoryDescription from schoolschedulingexample.categories order by  categorydescription asc;
+show DATABASES;
+use salesordersexample;
+select salesordersexample.vendors.VendName, vendzipcode from vendors order by vendzipcode desc;
+show tables;
+select Employees.EmpLastName , Employees.EmpFirstName,Employees.EmpPhoneNumber, Employees.EmployeeID\
+from Employees order by EmpLastName , EmpFirstName;
+show schemas;
+use entertainmentagencyexample;
+select DISTINCT entertainmentagencyexample.engagements.StartDate from engagements;
